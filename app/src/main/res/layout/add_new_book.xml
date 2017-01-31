@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:text="Tiêu Đề Sách"
+        android:id="@+id/edt_book_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_book_auth"
+        android:layout_below="@+id/edt_book_title"
+        android:text="Tác Giả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_book_publish"
+        android:text="Nhà Xuất Bản"
+        android:layout_below="@+id/edt_book_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_book_type"
+        android:layout_below="@+id/edt_book_publish"
+        android:text="Thể Loại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_book_des"
+        android:layout_below="@+id/edt_book_type"
+        android:text="Mô tả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_choose_picture"
+        android:layout_below="@+id/edt_book_des"
+        android:text="Chọn Ảnh"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/img_book_cover"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_choose_picture"
+        android:layout_width="160dp"
+        android:layout_height="240dp" />
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Đồng Ý"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Hủy Bỏ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
